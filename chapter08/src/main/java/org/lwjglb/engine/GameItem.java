@@ -47,6 +47,12 @@ public class GameItem {
         this.rotation.y = y;
         this.rotation.z = z;
     }
+
+    public void increaseRotation(float num){
+        this.rotation.y += num;
+        this.rotation.x += num;
+        this.rotation.z += num;
+    }
     
     public Mesh getMesh() {
         return mesh;
